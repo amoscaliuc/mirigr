@@ -1,0 +1,7 @@
+GitHub Repository:
+https://github.com/amoscaliuc/mirigr
+---
+PhpMyAdmin:
+http://dev.mirigr.md/phpmyadmin
+---
+
