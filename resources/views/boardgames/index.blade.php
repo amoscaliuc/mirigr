@@ -56,7 +56,7 @@
                         </li>
                         <li><a href="#About" class="about">О НАС</a></li>
                         <li><a href="#Portfolio" class="portfolio">ИГРЫ</a></li>
-                        <li><a href="#Activity" class="activity">АКТИВНОСТЬ</a></li>
+                        <li><a href="#Activity" class="activity">СТАТЬИ</a></li>
                         <li><a href="#Clients" class="clients">КЛИЕНТЫ</a></li>
                         <li><a href="#ContactUS" class="contact">СВЯЗЬ</a></li>
                         {{--<li class="active dropdown">
@@ -129,9 +129,9 @@
                     </div>
                     <div class="col-md-5 col-sm-12">
                         <div class="aboutMe">
-                            <img src="images/posts/about/about_header.jpg" alt="">
+                            <img src="{{ url('images/posts/about/about_header.jpg') }}" alt="">
                             <p><b>НОВИНКА В МОЛДОВЕ</b> : Знакомство с лучшими в Мире Настольными Играми в кругу Семьи и Друзей!
-                                    Откройте новый горизонт альтернативного вида совместного досуга в кругу близких... <br> <a href="">[Читать Дальше]</a>
+                                    Откройте новый горизонт альтернативного вида совместного досуга в кругу близких... <br> <a href="{{ route('post.view', $post->id) }}">[Читать Дальше]</a>
                             </p>
                         </div>
                     </div>
@@ -220,7 +220,7 @@
         <!--/Skills-->
         <div class="container-fluid" id="Portfolio">
             <div class="container">
-                <h2>PORTFOLIO <a href="" class="next fa fa-angle-right"></a><a href="" class="prev fa fa-angle-left"></a></h2>
+                <h2>Список Игр <a href="" class="next fa fa-angle-right"></a><a href="" class="prev fa fa-angle-left"></a></h2>
                 <div class="Slider owl-carousel">
                     <div class="work">
                         <a href="images/projects/project1-lg.gif" title="your project name [1]"><i class="fa fa-link"></i> Your Project Name [1]</a>
@@ -252,7 +252,7 @@
         <!--/Portfolio-->
         <div class="container-fluid" id="Activity">
             <div class="container">
-                <h2>ACTIVITY Blog</h2>
+                <h2>Статьи</h2>
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="post">
@@ -412,15 +412,15 @@
 <!--/Wrapper-->
 <div class="wrapperLoading"><span class="fa fa-refresh"></span></div>
 <!--java scripts file-->
-<script type="text/javascript" src="{{ url('js/jquery/jquery.js') }}"></script>
-<script type='text/javascript' src="{{ url('js/drag-drop/drag-drop.js') }}"></script>
-<script type="text/javascript" src="{{ url('js/bootstrap/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ url('js/colorbox/colorbox.min.js') }}"></script>
-<script type="text/javascript" src="{{ url('js/nicescroll/jquery.nicescroll.min.js') }}"></script>
-<script type="text/javascript" src="{{ url('js/knob/jquery.knob.js') }}"></script>
-<script type="text/javascript" src="{{ url('js/owl-carousel/owl.carousel.min.js') }}"></script>
-<script type="text/javascript" src="{{ url('js/viewport-checker/viewportchecker.js') }}"></script>
-<script type="text/javascript" src="{{ url('js/jquery/jquery.custom.js') }}"></script>
+<script type="text/javascript" src="{{ url('./js/jquery/jquery.js') }}"></script>
+<script type='text/javascript' src="{{ url('./js/drag-drop/drag-drop.js') }}"></script>
+<script type="text/javascript" src="{{ url('./js/bootstrap/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('./js/colorbox/colorbox.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('./js/nicescroll/jquery.nicescroll.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('./js/knob/jquery.knob.js') }}"></script>
+<script type="text/javascript" src="{{ url('./js/owl-carousel/owl.carousel.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('./js/viewport-checker/viewportchecker.js') }}"></script>
+<script type="text/javascript" src="{{ url('./js/jquery/jquery.custom.js') }}"></script>
 <!--/java scripts file-->
 </body>
 </html>

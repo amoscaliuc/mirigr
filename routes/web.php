@@ -18,3 +18,5 @@
 Route::get('/', [
     'uses' => 'BoardGamesController@index'
 ]);
+
+Route::get('post/{id}', 'BoardGamesController@view')->name('post.view');
