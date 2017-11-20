@@ -540,54 +540,17 @@
                                     <div class="skill-percentage skill-3"></div>
                                 </div>
                             </div>
-                            {{--<div class="block-title">
-                                <h3>Coding Skills</h3>
-                            </div>
-                            <div class="skills-info">
-                                <h4>HML5</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-4"></div>
-                                </div>
-
-                                <h4>CSS3</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-5"></div>
-                                </div>
-
-                                <h4>jQuery</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-6"></div>
-                                </div>
-
-                                <h4>Wordpress</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-7"></div>
-                                </div>
-
-                                <h4>PHP</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-8"></div>
-                                </div>
-                            </div>--}}
                             <img src="{{ url('images/service/eldorado4.png') }}" width="100%" alt="image">
                         </div>
                     </div>
-                    {{--<div class="row">
-                        <div class="col-sm-12 col-md-12">
-                            <div class="download-cv-block">
-                                <a class="button" target="_blank" href="#">Download CV</a>
-                            </div>
-                        </div>
-                    </div>--}}
                 </section>
                 <!-- End Resume Subpage -->
-
 
                 <!-- Portfolio Subpage -->
                 <section class="pt-page pt-page-4" data-id="portfolio">
                     <div class="section-title-block">
-                        <h2 class="section-title">Portfolio</h2>
-                        <h5 class="section-description">My Best Works</h5>
+                        <h2 class="section-title">Список Игр</h2>
+                        <h5 class="section-description">Одни из Лучших Настольных Игр по Миру</h5>
                     </div>
 
                     <!-- Portfolio Content -->
@@ -615,16 +578,27 @@
 
                             <!-- Portfolio Item 1 -->
                             <figure class="item" data-groups='["all", "media"]'>
-                                <a class="ajax-page-load" href="portfolio-1.html">
-                                    <img src="{{ url('images/portfolio/1.jpg') }}" alt="">
+                                <a class="ajax-page-load" href="{{ route('game.show') }}">
+                                    <img src="{{ url('images/portfolio/kingdom.jpg') }}" alt="">
                                     <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Media</small>
+                                        <h5 class="name">Kingdom Builder (Строитель Королевства)</h5>
+                                        <small>Стратегическая</small>
                                         <i class="fa fa-file-text-o"></i>
                                     </div>
                                 </a>
                             </figure>
                             <!-- /Portfolio Item 1 -->
+
+                            <figure class="item" data-groups='["all", "media"]'>
+                                <a class="ajax-page-load" href="{{ route('game.show') }}">
+                                    <img src="{{ url('images/portfolio/istanbul2.jpg') }}" alt="">
+                                    <div>
+                                        <h5 class="name">Istanbul (Стамбул)</h5>
+                                        <small>Стратегическая</small>
+                                        <i class="fa fa-file-text-o"></i>
+                                    </div>
+                                </a>
+                            </figure>
 
                             <!-- Portfolio Item 2 -->
                             <figure class="item" data-groups='["all", "video"]'>

@@ -12,10 +12,14 @@ class BoardGamesController extends Controller
     {
         //$post = Post::where('name', '=', 'main')->first();
 
-        return view('boardgames.index',
-            [
+        return view('boardgames.index', [
                 'post' => 0//$post
-            ]);
+        ]);
+    }
+
+    public function show()
+    {
+        return view('boardgames.show');
     }
 
     public function view($postId)
