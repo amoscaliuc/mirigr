@@ -147,22 +147,34 @@
                 <!-- About Me Subpage -->
                 <section class="pt-page pt-page-2" data-id="about_me">
                     <div class="section-title-block">
-                        <h2 class="section-title">About Me</h2>
-                        <h5 class="section-description">Artist, Thinker, Creative Doer</h5>
+                        <h2 class="section-title">О Нас</h2>
+                        <h5 class="section-description">Суть и Причина</h5>
                     </div>
 
                     <div class="row">
                         <div class="col-sm-6 col-md-6 subpage-block">
                             <div class="general-info">
-                                <h3>I am Web Developer/Designer @ Company.com</h3>
-                                <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.</p>
-                                <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus. Sed tellus nibh, lobortis ut blandit sed, convallis a mauris.</p>
+                                <div class="block-title">
+                                    <h3>Как Все Начиналось</h3>
+                                </div>
+                                <p  align="justify">
+                                    Все началось с очень пессимистичного отношения к настольным играм, помять о монополии (он же менеджер), шашках, картах, и т.д. не давали долгое время вернуть к ним интерес и дать им еще один шанс. Тем более настольные игры, как и всё в мире, не стоят на месте и развитие их за последние десятилетия очень обширное не только в странах Запада и Европы, но и в России, Украине, Белоруссии и да, у нас друзья - в Молдове!
+                                </p>
+                                <center><img src="{{ url('images/about/zelievarenie1.jpg') }}" width="40%" alt="image"></center>
+                                <p  align="justify">
+                                    Первое знакомство с современными настольными играми началось с игры Зельеваренье. Это карточное строение сетов из карт, сбор ингредиентов, рецептов, эликсиров, талисманов – поразила в сердце с первого же раза, закончившись довольно стандартной фразой: “давай еще разок разложимся”
+                                    Затем был Доминион, также карточная игра с различными сценариями из сотен карт!
+                                </p>
+                                <center><img src="{{ url('images/about/dominion.jpg') }}" width="40%" alt="image"></center>
+                                <p  align="justify">
+                                    Это был разрыв шаблонов о настольных играх. Дальше понеслось знакомство с ними благодаря друзьям, которые сами были увлечены и просто поделились этим, за что наша семья им очень благодарна!
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-sm-6 col-md-6 subpage-block">
                             <div class="block-title">
-                                <h3>Testimonials</h3>
+                                <h3>Изречения</h3>
                             </div>
                             <div class="testimonials owl-carousel">
                                 <!-- Testimonial 2 -->
@@ -170,7 +182,7 @@
                                     <!-- Testimonial Content -->
                                     <div class="testimonial-content">
                                         <div class="testimonial-text">
-                                            <p>"Proin auctor pulvinar tellus, et venenatis ligula pharetra eu. Duis dictum nisi sed pellentesque euismod."</p>
+                                            <p>"ДАЙТЕ НАСТОЛЬНЫМ ИГРАМ ШАНС, И ОНИ ВАС ОБЯЗАТЕЛЬНО УДИВЯТ!"</p>
                                         </div>
                                     </div>
                                     <!-- /Testimonial Content -->
@@ -183,8 +195,8 @@
                                         <!-- /Picture -->
                                         <!-- Testimonial author information -->
                                         <div class="testimonial-author-info">
-                                            <p class="testimonial-author">Bryan Morris</p>
-                                            <p class="testimonial-firm">Sun Foods</p>
+                                            <p class="testimonial-author">Board Game Community</p>
+                                            <p class="testimonial-firm">Saint Petersburg</p>
                                         </div>
                                     </div>
                                     <!-- /Testimonial author information -->
@@ -218,10 +230,36 @@
                                 <!-- End of Testimonial 2 -->
                             </div>
                         </div>
+                        <div class="general-info">
+                            <p align="justify">
+                                Дальше понеслась колесница знакомства со столь разнообразным и масштабным миром настольных игр, Агрикола, Пуэрто Рико, Эпоха Открытий, и т.д. Каждая игра имеет что-то свое, погружение в этот игровой мир всегда увлекателен из-за их шикарных разнообразных тематик. Реиграбельность многих современных настольных игр - отменна и не бывает практически двух идентичных партии, под любой состав.
+                            </p>
+                            <p  align="justify">
+                                Сыну было 7, когда мы начали играть с ним в несложные настольные игры, игра 7 Чудес – этому очень сильно поспособствовала, мы все полюбили эту иргу, даже наша бабушка (люди в возрасте, с удовольствием играют в настольные игра, проверено) до сих пор сравнивает все новые игры с 7 Чудес. :) Игра взяла 1 место по миру среди продвинутых игр в 2011 году. И действительно, ведь награды, которые получают современные игры по миру – по достоинству заслуженны!
+                            </p>
+                            <center><img src="{{ url('images/about/7wonders.jpg') }}" width="40%" alt="image"></center>
+                        </div>
+                        <div class="general-info">
+                            <div class="block-title">
+                               <h3>Для чего был создан данный ресурс и услуга?</h3>
+                            </div>
+                            <p  align="justify">
+                                Основная идея – это донести людям о чем-то, возможно новом в их жизни и поделится с чем-то, что нам, как семье, в свое время показалось очень интересным и полезным. В какой-то степени слоган страницы, что “Настольные Игры объединяют” может показаться напыщенным рекламным трюком, но это не так, так как это реальный опыт не только нашей семьи, но и очень многих отзывов семей по всему миру, кто дал настольным играм шанс и были поражены каждый чем-то по-своему. Разнообразие игр такое большое, что каждый находит в них что-то свое, близкое по духу.
+                            </p>
+                            <center><img src="{{ url('images/about/selestia.jpg') }}" width="40%" alt="image"></center>
+                            <p  align="justify">
+                                Единственный момент, который хочется отметить, что это только - альтернатива, т.е. дополнение к тому, что важно и должно быть в семье, любовь, уважение и все то, что укрепляет и объединяет, и не только в семье, но и в обществе в целом. Как говорится, все начинается сперва с самого человека, порядок и добро, а настольные игры – это может послужить просто одним из инструментов, которые в какой-то степени добавят еще один повод побыть и провести время совместно, при этом интерес сохраняется как у взрослых, так и у детей.
+                            </p>
+                            <center><img src="{{ url('images/about/istanbul.jpg') }}" width="40%" alt="image"></center>
+                            <p  align="justify">
+                                На самом деле говорить о пользе настольных игр не уместно, это и так известно, особенно для детей, которые перенимают многое от родителей. Поэтому, всем кому это интересно – Добро Пожаловать! Будем рады поделиться частичкой и лучиками добра посредством знакомства с таким интересным видом времяпровождения, как Настольные Игры.
+                            </p>
+                            <center><img src="{{ url('images/about/meeples.jpg') }}" width="25%" alt="image"></center>
+                        </div>
                     </div>
 
                     <!-- Services block -->
-                    <div class="block-title">
+                    {{--<div class="block-title">
                         <h3>Services</h3>
                     </div>
 
@@ -265,11 +303,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                     <!-- End of Services block -->
 
                     <!-- Clients block -->
-                    <div class="block-title">
+                    {{--<div class="block-title">
                         <h3>Clients</h3>
                     </div>
 
@@ -309,12 +347,12 @@
                                 <a href="#" target="_blank"><img src="{{ url('images/clients/client_6.png') }}" alt="image"></a>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                     <!-- End of Clients block -->
 
                     <!-- Fun facts block -->
-                    <div class="block-title">
-                        <h3>Fun Facts</h3>
+                    {{--<div class="block-title">
+                        <h3>Примерная Статистика</h3>
                     </div>
 
                     <div class="row">
@@ -349,7 +387,7 @@
                                 <span class="fun-value">20,000</span>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                     <!-- End of Fun fucts block -->
                 </section>
                 <!-- End of About Me Subpage -->
