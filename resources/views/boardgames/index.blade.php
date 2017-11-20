@@ -45,6 +45,14 @@
         <div class="site-title-block">
             <h1 class="site-title">Мир Настольных Игр</h1>
             <p class="site-description">Путеводитель</p>
+            <p class="site-description">
+                <table {{--border="1 px solid"--}} width="185" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="20%"><img width="80%" src="{{ url('images/md_flag.png') }}" alt="image"></td>
+                        <td width="80%"><b>+373 (793) 1-60-60</b></td>
+                    </tr>
+                </table>
+            </p>
         </div>
 
         <!-- Navigation & Social buttons -->
@@ -61,9 +69,9 @@
                     <a class="pt-trigger" href="#about_me" data-animation="59" data-goto="2">О Нас</a>
                 </li>
                 <!-- /About Me Subpage link -->
-                {{--<li>
-                    <a class="pt-trigger" href="#resume" data-animation="60" data-goto="3">Resume</a>
-                </li>--}}
+                <li>
+                    <a class="pt-trigger" href="#resume" data-animation="60" data-goto="3">Купить</a>
+                </li>
                 <li>
                     <a class="pt-trigger" href="#portfolio" data-animation="61" data-goto="4">Список Игр</a>
                 </li>
@@ -78,9 +86,9 @@
 
             <!-- Social buttons -->
             <ul class="social-links">
-                <li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li> <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
-                <li><a class="tip social-button" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="tip social-button" href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                <li><a class="tip social-button" href="https://www.facebook.com/mirigr.md" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li> <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+                <li><a class="tip social-button" href="https://www.facebook.com/mirigr.md" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="tip social-button" href="https://www.facebook.com/mirigr.md" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                 <!--<li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>-->
                 <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
             </ul>
@@ -130,7 +138,7 @@
                                 <ul class="info-list">
                                     <li><span class="title">Адрес:</span><span class="value">Молдова, Кишинев</span></li>
                                     <li><span class="title">Имейл:</span><span class="value"><a href="mailto:email@example.com">amoscaliuc@gmail.com</a></span></li>
-                                    <li><span class="title">Телефон:</span><span class="value">+(373) 793 1-60-60</span></li>
+                                    <li><span class="title">Телефон:</span><span class="value">+373 (793) 1-60-60</span></li>
                                     <li><span class="title">_______________________________________</span><span class="value"></span></li>
                                 </ul>
                             </div>
@@ -177,38 +185,12 @@
                                 <h3>Изречения</h3>
                             </div>
                             <div class="testimonials owl-carousel">
-                                <!-- Testimonial 2 -->
-                                <div class="testimonial-item">
-                                    <!-- Testimonial Content -->
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-text">
-                                            <p>"ДАЙТЕ НАСТОЛЬНЫМ ИГРАМ ШАНС, И ОНИ ВАС ОБЯЗАТЕЛЬНО УДИВЯТ!"</p>
-                                        </div>
-                                    </div>
-                                    <!-- /Testimonial Content -->
-                                    <!-- Testimonial Author -->
-                                    <div class="testimonial-credits">
-                                        <!-- Picture -->
-                                        <div class="testimonial-picture">
-                                            <img src="{{ url('/testimonials/testimonila_photo_2.png') }}" alt="">
-                                        </div>
-                                        <!-- /Picture -->
-                                        <!-- Testimonial author information -->
-                                        <div class="testimonial-author-info">
-                                            <p class="testimonial-author">Board Game Community</p>
-                                            <p class="testimonial-firm">Saint Petersburg</p>
-                                        </div>
-                                    </div>
-                                    <!-- /Testimonial author information -->
-                                </div>
-                                <!-- End of Testimonial 2 -->
-
-                                <!-- Testimonial 2 -->
+                                <!-- Testimonial 1 -->
                                 <div class="testimonial-item" style="width:100%">
                                     <!-- Testimonial Content -->
                                     <div class="testimonial-content">
                                         <div class="testimonial-text">
-                                            <p>"Vivamus porta dapibus tristique. Suspendisse et arcu eget nisi convallis eleifend nec ac lorem."</p>
+                                            <p>"Дайте Настольным Играм шанс, и они вас обязательно Удивят!"</p>
                                         </div>
                                     </div>
                                     <!-- /Testimonial Content -->
@@ -221,13 +203,63 @@
                                         <!-- /Picture -->
                                         <!-- Testimonial author information -->
                                         <div class="testimonial-author-info">
-                                            <p class="testimonial-author">John Doe</p>
-                                            <p class="testimonial-firm">Apple Inc.</p>
+                                            <p class="testimonial-author">Board Game Community</p>
+                                            <p class="testimonial-firm">Санкт Петербург</p>
+                                        </div>
+                                    </div>
+                                    <!-- /Testimonial author information -->
+                                </div>
+                                <!-- End of Testimonial 1 -->
+                                <!-- Testimonial 2 -->
+                                <div class="testimonial-item" style="width:100%">
+                                    <!-- Testimonial Content -->
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-text">
+                                            <p>"Настольные Игры - Объединяют!"</p>
+                                        </div>
+                                    </div>
+                                    <!-- /Testimonial Content -->
+                                    <!-- Testimonial Author -->
+                                    <div class="testimonial-credits">
+                                        <!-- Picture -->
+                                        <div class="testimonial-picture">
+                                            <img src="{{ url('images/testimonials/testimonial_photo_2.png') }}" alt="">
+                                        </div>
+                                        <!-- /Picture -->
+                                        <!-- Testimonial author information -->
+                                        <div class="testimonial-author-info">
+                                            <p class="testimonial-author">Путеводитель</p>
+                                            <p class="testimonial-firm">В Мир Настольных Игр</p>
                                         </div>
                                     </div>
                                     <!-- /Testimonial author information -->
                                 </div>
                                 <!-- End of Testimonial 2 -->
+                                <!-- Testimonial 3 -->
+                                <div class="testimonial-item" style="width:100%">
+                                    <!-- Testimonial Content -->
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-text">
+                                            <p>"Несмотря на всю свою красивость, полноту компонентов, настольная игра всегда будет всего лишь средством, своеобразным катализатором общения, новых знакомств и сближения между людьми. Помните это!"</p>
+                                        </div>
+                                    </div>
+                                    <!-- /Testimonial Content -->
+                                    <!-- Testimonial Author -->
+                                    <div class="testimonial-credits">
+                                        <!-- Picture -->
+                                        <div class="testimonial-picture">
+                                            <img src="{{ url('images/testimonials/testimonial_photo_3.png') }}" alt="">
+                                        </div>
+                                        <!-- /Picture -->
+                                        <!-- Testimonial author information -->
+                                        <div class="testimonial-author-info">
+                                            <p class="testimonial-author">Board Games MD</p>
+                                            <p class="testimonial-firm">Настольные игры Молдова</p>
+                                        </div>
+                                    </div>
+                                    <!-- /Testimonial author information -->
+                                </div>
+                                <!-- End of Testimonial 3 -->
                             </div>
                         </div>
                         <div class="general-info">
@@ -395,91 +427,120 @@
                 <!-- Resume Subpage -->
                 <section class="pt-page pt-page-3" data-id="resume">
                     <div class="section-title-block">
-                        <h2 class="section-title">Resume</h2>
-                        <h5 class="section-description">6 Years of Experience</h5>
+                        <h2 class="section-title">Купить</h2>
+                        <h5 class="section-description">Что для это Нужно и Зачем?</h5>
                     </div>
 
                     <div class="row">
                         <div class="col-sm-6 col-md-4 subpage-block">
                             <div class="block-title">
-                                <h3>Education</h3>
+                                <h3>Условия</h3>
                             </div>
+                            <img src="{{ url('images/service/buy.jpg') }}" width="100%" alt="image">
                             <div class="timeline">
                                 <!-- Single event -->
                                 <div class="timeline-event te-primary">
-                                    <h5 class="event-date">2010</h5>
-                                    <h4 class="event-name">Specialization Course</h4>
-                                    <span class="event-description">University of Studies</span>
-                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    <h5 class="event-date">Что нужно</h5>
+                                    <h4 class="event-name">Обычный созвон</h4>
+                                    <span class="event-description">Встреча в удобное для вас время</span>
+                                    <p>Созваниваемся, вы выбираете любую игру из <a href="#">Списка на Сайте</a>, договариваемся о встрече. А также возможен выезд на дом к вам с играми.</p>
                                 </div>
                                 <!-- Single event -->
                                 <div class="timeline-event te-primary">
-                                    <h5 class="event-date">2009</h5>
-                                    <h4 class="event-name">Specialization Course</h4>
-                                    <span class="event-description">University of Studies</span>
-                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    <h5 class="event-date">Цена</h5>
+                                    <h4 class="event-name">Недорого для обычного вечера</h4>
+                                    <span class="event-description">За каждую последующую игру за вечер: <b style="color: #0b0b0b;">+100 лей</b>.</span>
+                                    <p> - <b>200 лей</b> (для игр не сложных, от 20 до 40 минут)</p>
+                                    <p> - <b>350 лей</b> (для игр более сложных, 60+ минут)</p>
+                                    <p><b>Цена за игру, независимо от количества участников!</b></p>
+                                    <h4 class="event-name">За каждую последующую игру за вечер +100 лей.</h4>
                                 </div>
                                 <!-- Single event -->
                                 <div class="timeline-event te-primary">
-                                    <h5 class="event-date">2008</h5>
-                                    <h4 class="event-name">Specialization Course</h4>
-                                    <span class="event-description">University of Studies</span>
-                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    <h5 class="event-date">Возраст</h5>
+                                    <h4 class="event-name">У увлечении нет возраста</h4>
+                                    <span class="event-description">Как дети от 8 лет, так и Взрослые</span>
+                                    <p> - От <b>8</b> лет и <b>выше</b></p>
+                                </div>
+                                <!-- Single event -->
+                                <div class="timeline-event te-primary">
+                                    <h5 class="event-date">Просьба!</h5>
+                                    <h4 class="event-name">Очень Важная Просьба!</h4>
+                                    <span class="event-description">Если для вас это впервые</span>
+                                    <p>Ознакомиться со следующими <a href="https://www.youtube.com/watch?v=sz-R78_VRqk" target="_blank">СОВЕТАМИ</a> от Сообщества Настольных Игр - (BGC), это всего лишь 16 минут, но даст вам хорошее понимание важных нюансов!</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-sm-6 col-md-4 subpage-block">
                             <div class="block-title">
-                                <h3>Experience</h3>
+                                <h3>Причины</h3>
                             </div>
+                            <img src="{{ url('images/service/eldorado2.jpg') }}" width="100%" alt="image">
                             <div class="timeline">
                                 <!-- Single event -->
                                 <div class="timeline-event te-primary">
-                                    <h5 class="event-date">Dec 2012 - Current</h5>
-                                    <h4 class="event-name">Frontend-developer</h4>
-                                    <span class="event-description">Web Agency</span>
-                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    <h5 class="event-date">Новый Горизонт</h5>
+                                    <h4 class="event-name">В кругу Семьи и Близких</h4>
+                                    <span class="event-description">Новизна - это всегда к лучшему</span>
+                                    <p>Откройте новый горизонт альтернативного вида совместного досуга в кругу Семьи и Близких.</p>
                                 </div>
                                 <!-- Single event -->
                                 <div class="timeline-event te-primary">
-                                    <h5 class="event-date">Dec 2011 - Nov 2012</h5>
-                                    <h4 class="event-name">Web Designer</h4>
-                                    <span class="event-description">Apple Inc.</span>
-                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    <h5 class="event-date">Подарок</h5>
+                                    <h4 class="event-name">Для кого угодно из Близких</h4>
+                                    <span class="event-description">Ограничении по возрасту - НЕТ!</span>
+                                    <p>Порой бывает сложно подобрать подарок или купить что-то новое для семьи, чтобы было одновременно всем интересно и что не мало важно – объединяющее всех в какой-то альтернативной совместной деятельности. Потенциал современных настольных игр – справляется с этой задачей сполна!</p>
                                 </div>
                                 <!-- Single event -->
                                 <div class="timeline-event te-primary">
-                                    <h5 class="event-date">Jan 2010 - Dec 2011</h5>
-                                    <h4 class="event-name">Graphic Designer</h4>
-                                    <span class="event-description">Web Agency</span>
-                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    <h5 class="event-date">Проба</h5>
+                                    <h4 class="event-name">Вам Лично или кому-либо из Близких</h4>
+                                    <span class="event-description">Любая игра из <a href="#">Списка на Сайте</a></span>
+                                    <p>Попробуйте перед покупкой любую игру из списка ниже с подробным объяснением правил и самому сыграть, определив тем самым, насколько это подходит вам или близким.</p>
+                                </div>
+                                <!-- Single event -->
+                                <div class="timeline-event te-primary">
+                                    <h5 class="event-date">Подход</h5>
+                                    <h4 class="event-name">Как персонально, так и к компании</h4>
+                                    <span class="event-description">Состав и Возраст не имеют значения</span>
+                                    <p>Индивидуальный подход, любая тематика: экономической, стратегической, путешествия, кооперативной (где вы объединяетесь вместе и играете против механики игры), абстрактной, дуэльной (1х1) и т.д.</p>
+                                    <h4 class="event-name">Интересно и познавательно будет всем, гарантия!</h4>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-sm-6 col-md-4 subpage-block">
                             <div class="block-title">
-                                <h3>Design Skills</h3>
+                                <h3>Примерное Распределение Игр</h3>
                             </div>
                             <div class="skills-info">
-                                <h4>Web Design</h4>
+                                <h4>Экономические</h4>
                                 <div class="skill-container">
-                                    <div class="skill-percentage skill-1"></div>
+                                    <div class="skill-percentage skill-4"></div>
                                 </div>
 
-                                <h4>Graphic Design</h4>
+                                <h4>Стратегические</h4>
                                 <div class="skill-container">
-                                    <div class="skill-percentage skill-2"></div>
+                                    <div class="skill-percentage skill-5"></div>
                                 </div>
 
-                                <h4>Print Design</h4>
+                                <h4>Кооперативные</h4>
+                                <div class="skill-container">
+                                    <div class="skill-percentage skill-8"></div>
+                                </div>
+
+                                <h4>Абстрактные</h4>
+                                <div class="skill-container">
+                                    <div class="skill-percentage skill-7"></div>
+                                </div>
+
+                                <h4>Дуэльные</h4>
                                 <div class="skill-container">
                                     <div class="skill-percentage skill-3"></div>
                                 </div>
                             </div>
-
-                            <div class="block-title">
+                            {{--<div class="block-title">
                                 <h3>Coding Skills</h3>
                             </div>
                             <div class="skills-info">
@@ -507,16 +568,17 @@
                                 <div class="skill-container">
                                     <div class="skill-percentage skill-8"></div>
                                 </div>
-                            </div>
+                            </div>--}}
+                            <img src="{{ url('images/service/eldorado4.png') }}" width="100%" alt="image">
                         </div>
                     </div>
-                    <div class="row">
+                    {{--<div class="row">
                         <div class="col-sm-12 col-md-12">
                             <div class="download-cv-block">
                                 <a class="button" target="_blank" href="#">Download CV</a>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                 </section>
                 <!-- End Resume Subpage -->
 
