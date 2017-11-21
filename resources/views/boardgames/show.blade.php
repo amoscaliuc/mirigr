@@ -1,4 +1,4 @@
-<div id="portfolio-page" class="portfolio-page-content">
+<div id="portfolio-page-{{ $game->id }}" class="portfolio-page-content">
     <div class="container">
         <div class="portfolio-nav">
             <div id="portfolio-close-button" class="portfolio-close-button">
@@ -7,23 +7,23 @@
         </div>
 
         <div class="portfolio-title">
-            <h1>Kingdom Builder (Строитель Королевства)</h1>
+            <h1>{{ $game->name }}</h1>
         </div>
 
         <div class="row">
             <div class="col-sm-7 col-md-7 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
                     <div class="item">
-                        <img src="images/portfolio/kingdom_gallery/1_1.jpg" alt="">
+                        <img src="images/portfolio/{{ $folderName }}/1_1.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="images/portfolio/kingdom_gallery/1_2.jpg" alt="">
+                        <img src="images/portfolio/{{ $folderName }}/1_2.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="images/portfolio/kingdom_gallery/1_3.jpg" alt="">
+                        <img src="images/portfolio/{{ $folderName }}/1_3.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="images/portfolio/kingdom_gallery/1_4.jpg" alt="">
+                        <img src="images/portfolio/{{ $folderName }}/1_4.jpg" alt="">
                     </div>
                 </div>
 
@@ -47,22 +47,21 @@
             </div>
 
             <div class="col-sm-5 col-md-5 portfolio-block">
-                <!-- Project Description -->
+                <!-- Game Description -->
                 <div class="block-title">
                     <h3>Описание</h3>
                 </div>
                 <ul class="project-general-info">
-                    <li><p><i class="fa fa-users"></i>2-3 Игроков</p></li>
-                    <li><p><i class="fa fa-clock-o"></i>~ 45 Минут</p></li>
-                    <li><p><i class="fa fa-child"></i>от 8+</p></li>
-                    <li><p><i class="fa fa-calendar"></i>Опубикована в 2011</p></li>
+                    <li><p><i class="fa fa-users"></i>{{ $game->number_of_players }} Игроков</p></li>
+                    <li><p><i class="fa fa-clock-o"></i>{{ $game->time }} Минут</p></li>
+                    <li><p><i class="fa fa-child"></i>{{ $game->age }}</p></li>
+                    <li><p><i class="fa fa-calendar"></i>Опубикована в {{ $game->publish_year }}</p></li>
                     <li><p><i class="fa fa-globe"></i> <a href="http://tesera.ru/game/kingdom_builder/" target="_blank">http://tesera.ru/game/kingdom_builder</a></p></li>
                     <li><p><i class="fa fa-video-camera"></i> <a href="https://www.youtube.com/watch?v=aUVscbbRqAs" target="_blank">Полный Обзор и Геймплей</a></p></li>
                 </ul>
-                <p class="text-justify">Перед Вами красивая градостроительная игра с простыми правилами и интересным игровым процессом. В 2012 году Kingdom Builder признана лучшей игрой года в самой престижной настольной премии Spiel des Jahres, так что на нее стоит обратить внимание!.</p>
-                <p class="text-justify">Участники настольной игры Kingdom Builder будут застраивать собственные королевства: занимать земли и устанавливать на них поселения, которые, в свою очередь, будут приносить королевству прибыль. Владелец самого богатого королевства и станет победителем игры.</p>
+                <p class="text-justify">{{ $game->description }}</p>
                 <div class="portfolio-page-image">
-                    <center><img src="images/portfolio/kingdom_gallery/1_0.jpg" width="70%" alt="Kingdom Builder (Строитель Королевства)"></center>
+                    <center><img src="images/portfolio/{{ $folderName }}/1_0.jpg" width="70%" alt="{{ $game->name }}"></center>
                 </div>
                 <!-- /Project Description -->
 

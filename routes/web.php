@@ -21,4 +21,4 @@ Route::get('/', [
 
 Route::get('post/{id}', 'BoardGamesController@view')->name('post.view');
 
-Route::get('game}', 'BoardGamesController@show')->name('game.show');
+Route::get('game/{id}', 'BoardGamesController@show')->name('game.show');

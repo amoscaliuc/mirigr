@@ -10,16 +10,32 @@ class BoardGamesController extends Controller
 {
     public function index()
     {
-        //$post = Post::where('name', '=', 'main')->first();
+        $boardGames = BoardGame::all();
 
         return view('boardgames.index', [
-                'post' => 0//$post
+                'boardGames' => $boardGames,
+                'types' => BoardGame::getTypes()
+
         ]);
     }
 
-    public function show()
+    /**
+     * Get BoardGame description
+     *
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function show($id)
     {
-        return view('boardgames.show');
+        $game = BoardGame::findOrFail($id);
+        $folderName = explode('.', $game->image);
+
+        dd($game);
+
+        return view('boardgames.show',[
+            'game' => $game,
+            'folderName' => $folderName[0] . '_gallery'
+        ]);
     }
 
     public function view($postId)

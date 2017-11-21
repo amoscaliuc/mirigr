@@ -168,12 +168,12 @@
                                 <p  align="justify">
                                     Все началось с очень пессимистичного отношения к настольным играм, помять о монополии (он же менеджер), шашках, картах, и т.д. не давали долгое время вернуть к ним интерес и дать им еще один шанс. Тем более настольные игры, как и всё в мире, не стоят на месте и развитие их за последние десятилетия очень обширное не только в странах Запада и Европы, но и в России, Украине, Белоруссии и да, у нас друзья - в Молдове!
                                 </p>
-                                <center><img src="{{ url('images/about/zelievarenie1.jpg') }}" width="40%" alt="image"></center>
+                                <center><img src="{{ url('images/about/zelievarenie1.jpg') }}" width="70%" alt="image"></center>
                                 <p  align="justify">
                                     Первое знакомство с современными настольными играми началось с игры Зельеваренье. Это карточное строение сетов из карт, сбор ингредиентов, рецептов, эликсиров, талисманов – поразила в сердце с первого же раза, закончившись довольно стандартной фразой: “давай еще разок разложимся”
                                     Затем был Доминион, также карточная игра с различными сценариями из сотен карт!
                                 </p>
-                                <center><img src="{{ url('images/about/dominion.jpg') }}" width="40%" alt="image"></center>
+                                <center><img src="{{ url('images/about/dominion.jpg') }}" width="70%" alt="image"></center>
                                 <p  align="justify">
                                     Это был разрыв шаблонов о настольных играх. Дальше понеслось знакомство с ними благодаря друзьям, которые сами были увлечены и просто поделились этим, за что наша семья им очень благодарна!
                                 </p>
@@ -271,23 +271,23 @@
                             </p>
                             <center><img src="{{ url('images/about/7wonders.jpg') }}" width="40%" alt="image"></center>
                         </div>
-                        <div class="general-info">
-                            <div class="block-title">
-                               <h3>Для чего был создан данный ресурс и услуга?</h3>
-                            </div>
-                            <p  align="justify">
-                                Основная идея – это донести людям о чем-то, возможно новом в их жизни и поделится с чем-то, что нам, как семье, в свое время показалось очень интересным и полезным. В какой-то степени слоган страницы, что “Настольные Игры объединяют” может показаться напыщенным рекламным трюком, но это не так, так как это реальный опыт не только нашей семьи, но и очень многих отзывов семей по всему миру, кто дал настольным играм шанс и были поражены каждый чем-то по-своему. Разнообразие игр такое большое, что каждый находит в них что-то свое, близкое по духу.
-                            </p>
-                            <center><img src="{{ url('images/about/selestia.jpg') }}" width="40%" alt="image"></center>
-                            <p  align="justify">
-                                Единственный момент, который хочется отметить, что это только - альтернатива, т.е. дополнение к тому, что важно и должно быть в семье, любовь, уважение и все то, что укрепляет и объединяет, и не только в семье, но и в обществе в целом. Как говорится, все начинается сперва с самого человека, порядок и добро, а настольные игры – это может послужить просто одним из инструментов, которые в какой-то степени добавят еще один повод побыть и провести время совместно, при этом интерес сохраняется как у взрослых, так и у детей.
-                            </p>
-                            <center><img src="{{ url('images/about/istanbul.jpg') }}" width="40%" alt="image"></center>
-                            <p  align="justify">
-                                На самом деле говорить о пользе настольных игр не уместно, это и так известно, особенно для детей, которые перенимают многое от родителей. Поэтому, всем кому это интересно – Добро Пожаловать! Будем рады поделиться частичкой и лучиками добра посредством знакомства с таким интересным видом времяпровождения, как Настольные Игры.
-                            </p>
-                            <center><img src="{{ url('images/about/meeples.jpg') }}" width="25%" alt="image"></center>
+                    </div>
+                    <div class="general-info">
+                        <div class="block-title">
+                            <h3>Для чего был создан данный ресурс и услуга?</h3>
                         </div>
+                        <p  align="justify">
+                            Основная идея – это донести людям о чем-то, возможно новом в их жизни и поделится с чем-то, что нам, как семье, в свое время показалось очень интересным и полезным. В какой-то степени слоган страницы, что “Настольные Игры объединяют” может показаться напыщенным рекламным трюком, но это не так, так как это реальный опыт не только нашей семьи, но и очень многих отзывов семей по всему миру, кто дал настольным играм шанс и были поражены каждый чем-то по-своему. Разнообразие игр такое большое, что каждый находит в них что-то свое, близкое по духу.
+                        </p>
+                        <center><img src="{{ url('images/about/selestia.jpg') }}" width="40%" alt="image"></center>
+                        <p  align="justify">
+                            Единственный момент, который хочется отметить, что это только - альтернатива, т.е. дополнение к тому, что важно и должно быть в семье, любовь, уважение и все то, что укрепляет и объединяет, и не только в семье, но и в обществе в целом. Как говорится, все начинается сперва с самого человека, порядок и добро, а настольные игры – это может послужить просто одним из инструментов, которые в какой-то степени добавят еще один повод побыть и провести время совместно, при этом интерес сохраняется как у взрослых, так и у детей.
+                        </p>
+                        <center><img src="{{ url('images/about/istanbul.jpg') }}" width="40%" alt="image"></center>
+                        <p  align="justify">
+                            На самом деле говорить о пользе настольных игр не уместно, это и так известно, особенно для детей, которые перенимают многое от родителей. Поэтому, всем кому это интересно – Добро Пожаловать! Будем рады поделиться частичкой и лучиками добра посредством знакомства с таким интересным видом времяпровождения, как Настольные Игры.
+                        </p>
+                        <center><img src="{{ url('images/about/meeples.jpg') }}" width="25%" alt="image"></center>
                     </div>
 
                     <!-- Services block -->
@@ -541,6 +541,14 @@
                                 </div>
                             </div>
                             <img src="{{ url('images/service/eldorado4.png') }}" width="100%" alt="image">
+                            <div class="timeline">
+                                <div class="timeline-event te-primary">
+                                    <h5 class="event-date">Заказ Игр</h5>
+                                    <h4 class="event-name">В Скором времени</h4>
+                                    <span class="event-description">Помощь в приобритении и доставке</span>
+                                    <p>Возможен заказ Настольных Игр. Цены и сроки поставки в зависимости от наличия на складе у поставщика. Полная консультация по приобритению игр.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -550,7 +558,7 @@
                 <section class="pt-page pt-page-4" data-id="portfolio">
                     <div class="section-title-block">
                         <h2 class="section-title">Список Игр</h2>
-                        <h5 class="section-description">Одни из Лучших Настольных Игр по Миру</h5>
+                        <h5 class="section-description">Лучшие Настольные Игры в Мире</h5>
                     </div>
 
                     <!-- Portfolio Content -->
@@ -559,39 +567,44 @@
                         <!-- Portfolio filter -->
                         <ul id="portfolio_filters" class="portfolio-filters">
                             <li class="active">
-                                <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                                <a class="filter btn btn-sm btn-link active" data-group="all">Все</a>
                             </li>
                             <li>
-                                <a class="filter btn btn-sm btn-link" data-group="media">Media</a>
+                                <a class="filter btn btn-sm btn-link" data-group="1">Экономические</a>
                             </li>
                             <li>
-                                <a class="filter btn btn-sm btn-link" data-group="illustration">Illustration</a>
+                                <a class="filter btn btn-sm btn-link" data-group="2">Стратегические</a>
                             </li>
                             <li>
-                                <a class="filter btn btn-sm btn-link" data-group="video">Video</a>
+                                <a class="filter btn btn-sm btn-link" data-group="3">Кооперативные</a>
+                            </li>
+                            <li>
+                                <a class="filter btn btn-sm btn-link" data-group="4">Абстрактные</a>
+                            </li>
+                            <li>
+                                <a class="filter btn btn-sm btn-link" data-group="5">Дуэльные</a>
                             </li>
                         </ul>
                         <!-- End of Portfolio filter -->
 
                         <!-- Portfolio Grid -->
                         <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+                            @foreach ($boardGames as $boardGame)
+                                <figure class="item" data-groups='["all", "{{ $boardGame->type }}]"'>
+                                    <a class="ajax-page-load" href="{{ route('game.show', $boardGame->id) }}">
+                                        <img src="{{ url('images/portfolio/' . $boardGame->image) }}" alt="">
+                                        <div>
+                                            <h5 class="name">{{ $boardGame->name }}</h5>
+                                            <small>{{ $types[$boardGame->type] }}</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+                            @endforeach
 
-                            <!-- Portfolio Item 1 -->
-                            <figure class="item" data-groups='["all", "media"]'>
+                            {{--<figure class="item" data-groups='["all", "media"]'>
                                 <a class="ajax-page-load" href="{{ route('game.show') }}">
-                                    <img src="{{ url('images/portfolio/kingdom.jpg') }}" alt="">
-                                    <div>
-                                        <h5 class="name">Kingdom Builder (Строитель Королевства)</h5>
-                                        <small>Стратегическая</small>
-                                        <i class="fa fa-file-text-o"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 1 -->
-
-                            <figure class="item" data-groups='["all", "media"]'>
-                                <a class="ajax-page-load" href="{{ route('game.show') }}">
-                                    <img src="{{ url('images/portfolio/istanbul2.jpg') }}" alt="">
+                                    <img src="{{ url('images/portfolio/istanbul.jpg') }}" alt="">
                                     <div>
                                         <h5 class="name">Istanbul (Стамбул)</h5>
                                         <small>Стратегическая</small>
@@ -741,7 +754,7 @@
                                     </div>
                                 </a>
                             </figure>
-                            <!-- /Portfolio Item 12 -->
+                            <!-- /Portfolio Item 12 -->--}}
                         </div>
                         <!-- /Portfolio Grid -->
 
