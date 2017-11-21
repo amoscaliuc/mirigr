@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aUVscbbRqAs?autoplay=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="{{ $game->youtube_url }}?autoplay=0" frameborder="0" allowfullscreen></iframe>
                 </div>
 
                 <script type="text/javascript">
@@ -56,12 +56,12 @@
                     <li><p><i class="fa fa-clock-o"></i>{{ $game->time }} Минут</p></li>
                     <li><p><i class="fa fa-child"></i>{{ $game->age }}</p></li>
                     <li><p><i class="fa fa-calendar"></i>Опубикована в {{ $game->publish_year }}</p></li>
-                    <li><p><i class="fa fa-globe"></i> <a href="http://tesera.ru/game/kingdom_builder/" target="_blank">http://tesera.ru/game/kingdom_builder</a></p></li>
-                    <li><p><i class="fa fa-video-camera"></i> <a href="https://www.youtube.com/watch?v=aUVscbbRqAs" target="_blank">Полный Обзор и Геймплей</a></p></li>
+                    <li><p><i class="fa fa-globe"></i> <a href="{{ $game->tesera_url }}" target="_blank">{{ $game->tesera_url }}</a></p></li>
+                    <li><p><i class="fa fa-video-camera"></i> <a href="{{ $game->youtube_url }}" target="_blank">Полный Обзор и Геймплей</a></p></li>
                 </ul>
                 <p class="text-justify">{{ $game->description }}</p>
                 <div class="portfolio-page-image">
-                    <center><img src="images/portfolio/{{ $folderName }}/1_0.jpg" width="70%" alt="{{ $game->name }}"></center>
+                    <center><img src="images/portfolio/{{ $folderName }}/1_0.jpg" width="200" alt="{{ $game->name }}"></center>
                 </div>
                 <!-- /Project Description -->
 
@@ -71,8 +71,7 @@
                         <h3>Тип</h3>
                     </div>
                     <ul class="tags">
-                        <li><a>Стратегия</a></li>
-                        <li><a>Градостроительство</a></li>
+                        <li><a>{{ $types[$game->type] }}</a></li>
                     </ul>
                 </div>
                 <!-- /Technology -->

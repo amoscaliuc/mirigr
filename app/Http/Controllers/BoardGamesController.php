@@ -32,7 +32,8 @@ class BoardGamesController extends Controller
 
         return view('boardgames.show',[
             'game' => $game,
-            'folderName' => $folderName[0] . '_gallery'
+            'folderName' => $folderName[0] . '_gallery',
+            'types' => BoardGame::getTypes()
         ]);
     }
 

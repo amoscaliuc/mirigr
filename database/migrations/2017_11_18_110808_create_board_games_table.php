@@ -25,6 +25,8 @@ class CreateBoardGamesTable extends Migration
             $table->string('time');
             $table->string('language');
             $table->string('image');
+            $table->string('tesera_url');
+            $table->string('youtube_url');
             $table->timestamps();
         });
 
@@ -63,19 +65,25 @@ class CreateBoardGamesTable extends Migration
                 "time" => "~45",
                 "language" => "Языконезависимая",
                 "image" => "kingdom.jpg",
+                "tesera_url" => "http://tesera.ru/game/kingdom_builder",
+                "youtube_url" => "https://www.youtube.com/embed/aUVscbbRqAs",
                 "created_at" => $now,
                 "updated_at" => $now
             ],
             [
-                "name" => "Istanbul (Станбул)",
-                "description" => "Istanbul",
+                "name" => "Istanbul:  Brief & Siegel + Mocha & Baksheesh (Станбул: Письма и Печати + Мокко и Бакшиш)",
+                "description" => "
+                    Перед вами хорошая экономическая стратегия с внушительным списком наград. Вы ищите что-то особенное в игре, которое отличает ее от других - вы это найдете в игре Istanbul. Несложные правила, интересная механика, красивое оформление и хорошая реиграбельность - все это про настольную игру Istanbul. 
+                ",
                 "type" => 1,
                 "number_of_players" => "2-5",
                 "age" => "от 8+",
-                "publish_year" => "2012",
+                "publish_year" => "2014",
                 "time" => "~60",
                 "language" => "Языконезависимая",
                 "image" => "istanbul.jpg",
+                "tesera_url" => "http://tesera.ru/game/Istanbul/",
+                "youtube_url" => "https://www.youtube.com/embed/Cpx7dtQhQyQ",
                 "created_at" => $now,
                 "updated_at" => $now
             ]
