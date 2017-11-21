@@ -35,7 +35,7 @@ var PageTransitions = (function ($) {
 
         var href = $('#portfolio_grid figure a').each(function(){
             href = $(this).attr('href');
-            if(hash=='portfolio' + '/' + href.substr(0,href.length-5)){
+            if(hash=='portfolio' + '/' + href.substr(0,href.length)){
                 var toLoad =  $(this).attr('href');
                 showContent();
                 ajaxLoadedContent.load(toLoad);
@@ -46,7 +46,7 @@ var PageTransitions = (function ($) {
         // Show Portfolio item
         $('.subpages .ajax-page-load').click(function(){
             var toLoad = $(this).attr('href');
-            window.location.hash = 'portfolio' + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
+            window.location.hash = 'portfolio' + '/' + $(this).attr('href').substr(0,$(this).attr('href').length);
             return false;
         });
     }

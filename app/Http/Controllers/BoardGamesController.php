@@ -30,8 +30,6 @@ class BoardGamesController extends Controller
         $game = BoardGame::findOrFail($id);
         $folderName = explode('.', $game->image);
 
-        dd($game);
-
         return view('boardgames.show',[
             'game' => $game,
             'folderName' => $folderName[0] . '_gallery'

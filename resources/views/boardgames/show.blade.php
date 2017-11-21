@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aUVscbbRqAs?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aUVscbbRqAs?autoplay=0" frameborder="0" allowfullscreen></iframe>
                 </div>
 
                 <script type="text/javascript">

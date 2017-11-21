@@ -569,21 +569,11 @@
                             <li class="active">
                                 <a class="filter btn btn-sm btn-link active" data-group="all">Все</a>
                             </li>
-                            <li>
-                                <a class="filter btn btn-sm btn-link" data-group="1">Экономические</a>
-                            </li>
-                            <li>
-                                <a class="filter btn btn-sm btn-link" data-group="2">Стратегические</a>
-                            </li>
-                            <li>
-                                <a class="filter btn btn-sm btn-link" data-group="3">Кооперативные</a>
-                            </li>
-                            <li>
-                                <a class="filter btn btn-sm btn-link" data-group="4">Абстрактные</a>
-                            </li>
-                            <li>
-                                <a class="filter btn btn-sm btn-link" data-group="5">Дуэльные</a>
-                            </li>
+                            @foreach ($types as $key => $type)
+                                <li>
+                                    <a class="filter btn btn-sm btn-link" data-group="{{ $key }}">{{ $type }}</a>
+                                </li>
+                            @endforeach
                         </ul>
                         <!-- End of Portfolio filter -->
 
@@ -601,160 +591,6 @@
                                     </a>
                                 </figure>
                             @endforeach
-
-                            {{--<figure class="item" data-groups='["all", "media"]'>
-                                <a class="ajax-page-load" href="{{ route('game.show') }}">
-                                    <img src="{{ url('images/portfolio/istanbul.jpg') }}" alt="">
-                                    <div>
-                                        <h5 class="name">Istanbul (Стамбул)</h5>
-                                        <small>Стратегическая</small>
-                                        <i class="fa fa-file-text-o"></i>
-                                    </div>
-                                </a>
-                            </figure>
-
-                            <!-- Portfolio Item 2 -->
-                            <figure class="item" data-groups='["all", "video"]'>
-                                <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex" class="lightbox mfp-iframe">
-                                    <img src="images/portfolio/2.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Video</small>
-                                        <i class="fa fa-video-camera"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 2 -->
-
-                            <!-- Portfolio Item 3 -->
-                            <figure class="item" data-groups='["all","illustration"]'>
-                                <a href="images/portfolio/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                                    <img src="images/portfolio/3.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Illustration</small>
-                                        <i class="fa fa-image"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 3 -->
-
-                            <!-- Portfolio Item 4 -->
-                            <figure class="item" data-groups='["all", "media"]'>
-                                <a class="ajax-page-load" href="portfolio-1.html">
-                                    <img src="images/portfolio/4.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Media</small>
-                                        <i class="fa fa-file-text-o"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 4 -->
-
-                            <!-- Portfolio Item 5 -->
-                            <figure class="item" data-groups='["all", "illustration"]'>
-                                <a href="images/portfolio/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
-                                    <img src="images/portfolio/5.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Illustration</small>
-                                        <i class="fa fa-image"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 5 -->
-
-                            <!-- Portfolio Item 6 -->
-                            <figure class="item" data-groups='["all", "media"]'>
-                                <a class="ajax-page-load" href="portfolio-1.html">
-                                    <img src="images/portfolio/6.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Media</small>
-                                        <i class="fa fa-file-text-o"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 6 -->
-
-                            <!-- Portfolio Item 7 -->
-                            <figure class="item" data-groups='["all", "video"]'>
-                                <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi" class="lightbox mfp-iframe">
-                                    <img src="images/portfolio/7.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Video</small>
-                                        <i class="fa fa-video-camera"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 7 -->
-
-                            <!-- Portfolio Item 8 -->
-                            <figure class="item" data-groups='["all",  "media"]'>
-                                <a class="ajax-page-load" href="portfolio-1.html">
-                                    <img src="images/portfolio/8.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Media</small>
-                                        <i class="fa fa-file-text-o"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 8 -->
-
-                            <!-- Portfolio Item 9 -->
-                            <figure class="item" data-groups='["all","illustration"]'>
-                                <a href="images/portfolio/9.jpg" class="lightbox" title="Mauris Neque Dolor">
-                                    <img src="images/portfolio/9.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Illustration</small>
-                                        <i class="fa fa-image"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 9 -->
-
-                            <!-- Portfolio Item 10 -->
-                            <figure class="item" data-groups='["all", "video"]'>
-                                <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Donec Lectus Arcu" class="lightbox mfp-iframe">
-                                    <img src="images/portfolio/10.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Video</small>
-                                        <i class="fa fa-video-camera"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 10 -->
-
-                            <!-- Portfolio Item 11 -->
-                            <figure class="item" data-groups='["all","illustration"]'>
-                                <a href="images/portfolio/11.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                                    <img src="images/portfolio/11.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Illustration</small>
-                                        <i class="fa fa-image"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 11 -->
-
-                            <!-- Portfolio Item 12 -->
-                            <figure class="item" data-groups='["all","media"]'>
-                                <a class="ajax-page-load" href="portfolio-1.html">
-                                    <img src="images/portfolio/12.jpg" alt="">
-                                    <div>
-                                        <h5 class="name">Project Name</h5>
-                                        <small>Media</small>
-                                        <i class="fa fa-file-text-o"></i>
-                                    </div>
-                                </a>
-                            </figure>
-                            <!-- /Portfolio Item 12 -->--}}
                         </div>
                         <!-- /Portfolio Grid -->
 
