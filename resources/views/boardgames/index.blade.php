@@ -593,7 +593,34 @@
                             @endforeach
                         </div>
                         <!-- /Portfolio Grid -->
-
+                        <div class="block-title">
+                            <h3>Полный Список</h3>
+                        </div>
+                        <ul class="project-general-info">
+                            <li><p><i class="fa fa-check-square-o"></i>Остров Скай</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Кингдомино</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Запретный Остров</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Селестия</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Великий Западный Путь</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Рококо</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Каверна</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Агрикола</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>7 чудес. Дуэль + Дополнение Пантеон</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>7 Чудес + Дополнения Вавилон и Города</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 3) }}">Пять Племен + Дополнения Ремесленников и Султаны</a></p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Робинзон Крузо</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 2) }}">Истамбул + Дополнения Brief & Siegel, Mokka und Bakschisch</a></p></li>
+                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 5) }}">Андор + Дополнение Легенда о звёздном щите</a></p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Зельеварение + Дополнения Алхимиков и Университет</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Пуэрто Рико</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Эпоха Открытий</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 6) }}">Билет на Поезд: Европа</a></p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Каменный Век</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 7) }}">Доминион</a></p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Канагава</p></li>
+                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 8) }}">Путешествия Марко Поло</a></p></li>
+                            <li><p><i class="fa fa-check-square-o"></i>Замки Бургундии</p></li>
+                        </ul>
                     </div>
                     <!-- /Portfolio Content -->
 

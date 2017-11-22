@@ -61,7 +61,7 @@
                 </ul>
                 <p class="text-justify">{{ $game->description }}</p>
                 <div class="portfolio-page-image">
-                    <center><img src="images/portfolio/{{ $folderName }}/1_0.jpg" width="200" alt="{{ $game->name }}"></center>
+                    <center><img src="images/portfolio/{{ $folderName }}/1_0.jpg" width="400" alt="{{ $game->name }}"></center>
                 </div>
                 <!-- /Project Description -->
 
@@ -72,6 +72,7 @@
                     </div>
                     <ul class="tags">
                         <li><a>{{ $types[$game->type] }}</a></li>
+                        <li><a>{{ $game->language }}</a></li>
                     </ul>
                 </div>
                 <!-- /Technology -->
