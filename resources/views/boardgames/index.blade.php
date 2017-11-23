@@ -89,7 +89,7 @@
                 <li><a class="tip social-button" href="https://www.facebook.com/mirigr.md" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li> <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
                 <li><a class="tip social-button" href="https://www.facebook.com/mirigr.md" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 <li><a class="tip social-button" href="https://www.facebook.com/mirigr.md" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <!--<li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>-->
+                <li><a class="tip social-button" href="https://www.youtube.com/channel/UCmg7RM71JEdRdt27BbQMUbA" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a></li>
                 <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
             </ul>
             <!-- /Social buttons -->
@@ -137,7 +137,7 @@
                             <div class="block end" style="text-align: center">
                                 <ul class="info-list">
                                     <li><span class="title">Адрес:</span><span class="value">Молдова, Кишинев</span></li>
-                                    <li><span class="title">Имейл:</span><span class="value"><a href="mailto:email@example.com">amoscaliuc@gmail.com</a></span></li>
+                                    <li><span class="title">Имейл:</span><span class="value"><a href="mailto:email@example.com">mirigr@gmail.com</a></span></li>
                                     <li><span class="title">Телефон:</span><span class="value">+373 (793) 1-60-60</span></li>
                                     <li><span class="title">_______________________________________</span><span class="value"></span></li>
                                 </ul>
@@ -335,11 +335,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>--}}
+                    </div>--}}{{--
                     <!-- End of Services block -->
 
                     <!-- Clients block -->
-                    {{--<div class="block-title">
+                    --}}{{--<div class="block-title">
                         <h3>Clients</h3>
                     </div>
 
@@ -379,11 +379,11 @@
                                 <a href="#" target="_blank"><img src="{{ url('images/clients/client_6.png') }}" alt="image"></a>
                             </div>
                         </div>
-                    </div>--}}
+                    </div>--}}{{--
                     <!-- End of Clients block -->
 
                     <!-- Fun facts block -->
-                    {{--<div class="block-title">
+                    --}}{{--<div class="block-title">
                         <h3>Примерная Статистика</h3>
                     </div>
 
@@ -563,7 +563,9 @@
 
                     <!-- Portfolio Content -->
                     <div class="portfolio-content">
-
+                        <div class="block-title">
+                            <h3>Топ Игр Для Начинающих</h3>
+                        </div>
                         <!-- Portfolio filter -->
                         <ul id="portfolio_filters" class="portfolio-filters">
                             <li class="active">
@@ -596,31 +598,79 @@
                         <div class="block-title">
                             <h3>Полный Список</h3>
                         </div>
-                        <ul class="project-general-info">
-                            <li><p><i class="fa fa-check-square-o"></i>Остров Скай</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Кингдомино</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Запретный Остров</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Селестия</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Великий Западный Путь</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Рококо</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Каверна</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Агрикола</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>7 чудес. Дуэль + Дополнение Пантеон</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>7 Чудес + Дополнения Вавилон и Города</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 3) }}">Пять Племен + Дополнения Ремесленников и Султаны</a></p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Робинзон Крузо</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 2) }}">Истамбул + Дополнения Brief & Siegel, Mokka und Bakschisch</a></p></li>
-                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 5) }}">Андор + Дополнение Легенда о звёздном щите</a></p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Зельеварение + Дополнения Алхимиков и Университет</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Пуэрто Рико</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Эпоха Открытий</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 6) }}">Билет на Поезд: Европа</a></p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Каменный Век</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 7) }}">Доминион</a></p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Канагава</p></li>
-                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 8) }}">Путешествия Марко Поло</a></p></li>
-                            <li><p><i class="fa fa-check-square-o"></i>Замки Бургундии</p></li>
-                        </ul>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="timeline">
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">Экономические</h5>
+                                        <p>
+                                            <ul class="project-general-info">
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/kingdom_builder/">Строитель Королевства</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/Caverna_The_Cave_Farmers/">Каверна</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/Agricola_revised_edition/">Агрикола</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 3) }}">7 Чудес + Вавилон и Города</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/puerto_rico/">Пуэрто Рико</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/age_of_empires_iii/">Эпоха Открытий</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/stone_age/">Каменный Век</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/die_burgen_von_burgund/">Замки Бургундии</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 6) }}">Cтамбул + Brief & Siegel, Mokka & Bakschisch</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/Isle_of_Skye/">Остров Скай</a></p></li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="timeline">
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">Стратегические</h5>
+                                        <p>
+                                            <ul class="project-general-info">
+                                                <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 8) }}">Кингдомино</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/celestia/">Селестия</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/great_western_trail/">Великий Западный Путь</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/rokoko/">Рококо</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/5tribes/">Пять Племен + Ремесленники и Султаны</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/Potion-Making_Practice/">Зельеварение + Алхимики и Университет</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 1) }}">Билет на Поезд: Европа</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 2) }}">Доминион</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 7) }}">Канагава</a></p></li>
+                                                <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/stone_age/">Путешествия Марко Поло</a></p></li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="timeline-event te-primary">
+                                    <h5 class="event-date">Кооперативные</h5>
+                                    <p>
+                                        <ul class="project-general-info">
+                                            <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/Robinson_Crusoe_Adventure_on_the_Cursed_Island/">Робинзон Крузо</a></p></li>
+                                            <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/forbidden_island/">Запретный Остров</a></p></li>
+                                            <li><p><i class="fa fa-check-square-o"></i><a class="ajax-page-load" href="{{ route('game.show', 5) }}">Андор + Легенда о звёздном щите</a></p></li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="timeline-event te-primary">
+                                    <h5 class="event-date">Абстрактные</h5>
+                                    <p>
+                                        <ul class="project-general-info">
+                                        <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/dixit_odyssey/">Диксит</a></p></li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="timeline-event te-primary">
+                                    <h5 class="event-date">Дуэльные</h5>
+                                    <p>
+                                        <ul class="project-general-info">
+                                            <li><p><i class="fa fa-check-square-o"></i><a target="_blank" href="http://tesera.ru/game/7_wonders_duel/">7 чудес. Дуэль + Дополнение Пантеон</a></p></li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- /Portfolio Content -->
 
