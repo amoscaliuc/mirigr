@@ -436,7 +436,7 @@
                             <div class="block-title">
                                 <h3>Условия</h3>
                             </div>
-                            <img src="{{ url('images/service/buy.jpg') }}" width="100%" alt="image">
+                            <img src="{{ url('images/service/marco3.jpg') }}" width="600" alt="image">
                             <div class="timeline">
                                 <!-- Single event -->
                                 <div class="timeline-event te-primary">
@@ -476,7 +476,7 @@
                             <div class="block-title">
                                 <h3>Причины</h3>
                             </div>
-                            <img src="{{ url('images/service/eldorado2.jpg') }}" width="100%" alt="image">
+                            <img src="{{ url('images/service/marco2.jpg') }}" width="100%" alt="image">
                             <div class="timeline">
                                 <!-- Single event -->
                                 <div class="timeline-event te-primary">
@@ -512,35 +512,40 @@
 
                         <div class="col-sm-6 col-md-4 subpage-block">
                             <div class="block-title">
-                                <h3>Примерное Распределение Игр</h3>
+                                <h3>Статистика и Планы</h3>
                             </div>
-                            <div class="skills-info">
-                                <h4>Экономические</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-4"></div>
-                                </div>
+                            <img src="{{ url('images/service/marco1.jpg') }}" width="100%" alt="image">
+                            <div class="timeline">
+                                <div class="timeline-event te-primary">
+                                    <h5 class="event-date">Примерное Распределение Игр</h5>
+                                    <div class="skills-info">
+                                        <h4>Экономические</h4>
+                                        <div class="skill-container">
+                                            <div class="skill-percentage skill-4"></div>
+                                        </div>
 
-                                <h4>Стратегические</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-5"></div>
-                                </div>
+                                        <h4>Стратегические</h4>
+                                        <div class="skill-container">
+                                            <div class="skill-percentage skill-5"></div>
+                                        </div>
 
-                                <h4>Кооперативные</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-8"></div>
-                                </div>
+                                        <h4>Кооперативные</h4>
+                                        <div class="skill-container">
+                                            <div class="skill-percentage skill-8"></div>
+                                        </div>
 
-                                <h4>Абстрактные</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-7"></div>
-                                </div>
+                                        <h4>Абстрактные</h4>
+                                        <div class="skill-container">
+                                            <div class="skill-percentage skill-7"></div>
+                                        </div>
 
-                                <h4>Дуэльные</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-3"></div>
+                                        <h4>Дуэльные</h4>
+                                        <div class="skill-container">
+                                            <div class="skill-percentage skill-3"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <img src="{{ url('images/service/eldorado4.png') }}" width="100%" alt="image">
                             <div class="timeline">
                                 <div class="timeline-event te-primary">
                                     <h5 class="event-date">Заказ Игр</h5>
