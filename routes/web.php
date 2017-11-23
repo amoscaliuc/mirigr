@@ -15,10 +15,8 @@
     return view('welcome');
 });*/
 
-Route::get('/', [
-    'uses' => 'BoardGamesController@index'
-]);
-
-Route::get('post/{id}', 'BoardGamesController@view')->name('post.view');
+Route::get('/', 'BoardGamesController@index')->name('game.main');
 
 Route::get('game/{id}', 'BoardGamesController@show')->name('game.show');
+
+Route::get('post/{id}', 'BoardGamesController@view')->name('post.view');

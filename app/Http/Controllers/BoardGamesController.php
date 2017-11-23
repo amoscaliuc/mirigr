@@ -37,12 +37,15 @@ class BoardGamesController extends Controller
         ]);
     }
 
+    /**
+     * Get Post Details
+     * @param $postId
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function view($postId)
     {
-        $post = Post::findOrFail($postId);
+        //$post = Post::findOrFail($postId);
 
-        return view('posts.index', [
-            'post' => $post
-        ]);
+        return view('posts.index');
     }
 }

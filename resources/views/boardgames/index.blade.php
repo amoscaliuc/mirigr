@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Мир Настольных Игр</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Sunshine - Responsive vCard Template" />
-    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Sunshine, portfolio" />
+    <meta name="description" content="Мир Настольных Игр" />
+    <meta name="keywords" content="настольные игры, молдова, board games, moldova, jocuri de masa" />
     <meta name="author" content="lmtheme" />
     <link rel="shortcut icon" href="{{ url('images/my_photo.png') }}">
 
@@ -61,25 +61,25 @@
             <ul id="nav" class="site-main-menu">
                 <!-- About Me Subpage link -->
                 <li>
-                    <a class="pt-trigger" href="#home" data-animation="58" data-goto="1">Главная</a><!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
+                    <a class="pt-trigger" href="{{route("game.main")}}#home" data-animation="58" data-goto="1">Главная</a><!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
                 </li>
                 <!-- /About Me Subpage link -->
                 <!-- About Me Subpage link -->
                 <li>
-                    <a class="pt-trigger" href="#about_me" data-animation="59" data-goto="2">О Нас</a>
+                    <a class="pt-trigger" href="{{route("game.main")}}#about_me" data-animation="59" data-goto="2">О Нас</a>
                 </li>
                 <!-- /About Me Subpage link -->
                 <li>
-                    <a class="pt-trigger" href="#resume" data-animation="60" data-goto="3">Купить</a>
+                    <a class="pt-trigger" href="{{route("game.main")}}#resume" data-animation="60" data-goto="3">Купить</a>
                 </li>
                 <li>
-                    <a class="pt-trigger" href="#portfolio" data-animation="61" data-goto="4">Список Игр</a>
+                    <a class="pt-trigger" href="{{route("game.main")}}#portfolio" data-animation="61" data-goto="4">Список Игр</a>
                 </li>
                 <li>
-                    <a class="pt-trigger" href="#blog" data-animation="58" data-goto="5">Статьи</a>
+                    <a class="pt-trigger" href="{{route("game.main")}}#blog" data-animation="58" data-goto="5">Статьи</a>
                 </li>
                 <li>
-                    <a class="pt-trigger" href="#contact" data-animation="59" data-goto="6">Контакты</a>
+                    <a class="pt-trigger" href="{{route("game.main")}}#contact" data-animation="59" data-goto="6">Контакты</a>
                 </li>
             </ul>
             <!-- /Main menu -->
@@ -443,7 +443,7 @@
                                     <h5 class="event-date">Что нужно</h5>
                                     <h4 class="event-name">Обычный созвон</h4>
                                     <span class="event-description">Встреча в удобное для вас время</span>
-                                    <p>Созваниваемся, вы выбираете любую игру из <a href="#portfolio">Списка на Сайте</a>, договариваемся о встрече. А также возможен выезд на дом к вам с играми.</p>
+                                    <p>Созваниваемся, вы выбираете любую игру из <a class="pt-trigger" href="#portfolio" data-animation="61" data-goto="4" target="_blank">Списка на Сайте</a>, договариваемся о встрече. А также возможен выезд на дом к вам с играми.</p>
                                 </div>
                                 <!-- Single event -->
                                 <div class="timeline-event te-primary">
@@ -496,7 +496,7 @@
                                 <div class="timeline-event te-primary">
                                     <h5 class="event-date">Проба</h5>
                                     <h4 class="event-name">Вам Лично или кому-либо из Близких</h4>
-                                    <span class="event-description">Любая игра из <a href="#portfolio">Списка на Сайте</a></span>
+                                    <span class="event-description">Любая игра из <a class="pt-trigger" href="#portfolio" data-animation="61" data-goto="4" target="_blank">Списка на Сайте</a></span>
                                     <p>Попробуйте перед покупкой любую игру из списка ниже с подробным объяснением правил и самому сыграть, определив тем самым, насколько это подходит вам или близким.</p>
                                 </div>
                                 <!-- Single event -->
@@ -512,7 +512,7 @@
 
                         <div class="col-sm-6 col-md-4 subpage-block">
                             <div class="block-title">
-                                <h3>Статистика и Планы</h3>
+                                <h3></h3>
                             </div>
                             <img src="{{ url('images/service/marco1.jpg') }}" width="100%" alt="image">
                             <div class="timeline">
@@ -685,169 +685,29 @@
                 <!-- Blog Subpage -->
                 <section class="pt-page pt-page-5" data-id="blog">
                     <div class="section-title-block">
-                        <h2 class="section-title">Blog</h2>
-                        <h5 class="section-description">My Diary</h5>
+                        <h2 class="section-title">Статьи</h2>
+                        <h5 class="section-description">Обзоры, Отзывы, Заметки</h5>
                     </div>
                     <div class="blog-masonry">
                         <!-- Blog Post 1 -->
                         <div class="item">
                             <div class="blog-card">
                                 <div class="media-block">
-                                    <a href="blog-post-1.html">
-                                        <img class="post-image img-responsive" src="images/blog/blog_post_1.jpg" alt="blog-post-1" />
+                                    <a href="{{ route("post.view", 1) }}">
+                                        <img class="post-image img-responsive" src="images/blog/blog_kanagawa/kanagawa_main_min.jpg" alt="blog-post-1" />
                                         <div class="mask"></div>
-                                        <div class="post-date"><span class="day">6</span><span class="month">Dec</span><!--<span class="year">2016</span>--></div>
+                                        <div class="post-date"><span class="day">20</span><span class="month">Окт</span><span class="year">2017</span></div>
                                     </a>
                                 </div>
                                 <div class="post-info">
                                     <ul class="category">
-                                        <li><a href="#">Travel</a></li>
+                                        <li><a href="#">Обзор</a></li>
                                     </ul>
-                                    <a href="blog-post-1.html"><h4 class="blog-item-title">Bootstrap is the Most Popular Framework</h4></a>
+                                    <a href="{{ route("post.view", 1) }}"><h4 class="blog-item-title">Знакомимся с Канагава</h4></a>
                                 </div>
                             </div>
                         </div>
                         <!-- End of Blog Post 1 -->
-
-                        <!-- Blog Post 2 -->
-                        <div class="item">
-                            <div class="blog-card">
-                                <div class="media-block">
-                                    <a href="blog-post-1.html">
-                                        <img class="post-image img-responsive" src="images/blog/blog_post_2.jpg" alt="blog-post-2" />
-                                        <div class="mask"></div>
-                                        <div class="post-date"><span class="day">3</span><span class="month">Nov</span><!--<span class="year">2016</span>--></div>
-                                    </a>
-                                </div>
-                                <div class="post-info">
-                                    <ul class="category">
-                                        <li><a href="#">jQuery</a></li>
-                                    </ul>
-                                    <a href="blog-post-1.html"><h4 class="blog-item-title">One Framework, Every Device</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of Blog Post 2 -->
-
-                        <!-- Blog Post 3 -->
-                        <div class="item">
-                            <div class="blog-card">
-                                <div class="media-block">
-                                    <a href="blog-post-1.html">
-                                        <img class="post-image img-responsive" src="images/blog/blog_post_3.jpg" alt="blog-post-3" />
-                                        <div class="mask"></div>
-                                        <div class="post-date"><span class="day">12</span><span class="month">Oct</span><!--<span class="year">2016</span>--></div>
-                                    </a>
-                                </div>
-                                <div class="post-info">
-                                    <ul class="category">
-                                        <li><a href="#">Sport</a></li>
-                                    </ul>
-                                    <a href="blog-post-1.html"><h4 class="blog-item-title">Designed for Everyone, Everywhere</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of Blog Post 3 -->
-
-                        <!-- Blog Post 4 -->
-                        <div class="item">
-                            <div class="blog-card">
-                                <div class="media-block">
-                                    <a href="blog-post-1.html">
-                                        <img class="post-image img-responsive" src="images/blog/blog_post_4.jpg" alt="blog-post-4" />
-                                        <div class="mask"></div>
-                                        <div class="post-date"><span class="day">18</span><span class="month">Aug</span><!--<span class="year">2016</span>--></div>
-                                    </a>
-                                </div>
-                                <div class="post-info">
-                                    <ul class="category">
-                                        <li><a href="#">CSS</a></li>
-                                    </ul>
-                                    <a href="blog-post-1.html"><h4 class="blog-item-title">An Introduction To PostCSS</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of Blog Post 4 -->
-
-                        <!-- Blog Post 5 -->
-                        <div class="item">
-                            <div class="blog-card">
-                                <div class="media-block">
-                                    <a href="blog-post-1.html">
-                                        <img class="post-image img-responsive" src="images/blog/blog_post_5.jpg" alt="blog-post-5" />
-                                        <div class="mask"></div>
-                                        <div class="post-date"><span class="day">2</span><span class="month">Jul</span><!--<span class="year">2016</span>--></div>
-                                    </a>
-                                </div>
-                                <div class="post-info">
-                                    <ul class="category">
-                                        <li><a href="#">CSS3</a></li>
-                                    </ul>
-                                    <a href="blog-post-1.html"><h4 class="blog-item-title">Original and Innovative Web Layouts</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of Blog Post 5 -->
-
-                        <!-- Blog Post 6 -->
-                        <div class="item">
-                            <div class="blog-card">
-                                <div class="media-block">
-                                    <a href="blog-post-1.html">
-                                        <img class="post-image img-responsive" src="images/blog/blog_post_6.jpg" alt="blog-post-6" />
-                                        <div class="mask"></div>
-                                        <div class="post-date"><span class="day">8</span><span class="month">May</span><!--<span class="year">2016</span>--></div>
-                                    </a>
-                                </div>
-                                <div class="post-info">
-                                    <ul class="category">
-                                        <li><a href="#">HTML5</a></li>
-                                    </ul>
-                                    <a href="blog-post-1.html"><h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of Blog Post 6 -->
-
-                        <!-- Blog Post 7 -->
-                        <div class="item">
-                            <div class="blog-card">
-                                <div class="media-block">
-                                    <a href="blog-post-1.html">
-                                        <img class="post-image img-responsive" src="images/blog/blog_post_7.jpg" alt="blog-post-7" />
-                                        <div class="mask"></div>
-                                        <div class="post-date"><span class="day">7</span><span class="month">Apr</span><!--<span class="year">2016</span>--></div>
-                                    </a>
-                                </div>
-                                <div class="post-info">
-                                    <ul class="category">
-                                        <li><a href="#">Design</a></li>
-                                    </ul>
-                                    <a href="blog-post-1.html"><h4 class="blog-item-title">Navigation for Mega-Sites</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of Blog Post 7 -->
-
-                        <!-- Blog Post 8 -->
-                        <div class="item">
-                            <div class="blog-card">
-                                <div class="media-block">
-                                    <a href="blog-post-1.html">
-                                        <img class="post-image img-responsive" src="images/blog/blog_post_8.jpg" alt="blog-post-8" />
-                                        <div class="mask"></div>
-                                        <div class="post-date"><span class="day">21</span><span class="month">Mar</span><!--<span class="year">2016</span>--></div>
-                                    </a>
-                                </div>
-                                <div class="post-info">
-                                    <ul class="category">
-                                        <li><a href="#">CSS3</a></li>
-                                    </ul>
-                                    <a href="blog-post-1.html"><h4 class="blog-item-title">Front-End Challenge Accepted: CSS 3D Cube</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of Blog Post 8 -->
                     </div>
                 </section>
                 <!-- End Blog Subpage -->
