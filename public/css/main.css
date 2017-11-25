@@ -702,7 +702,7 @@ ul.social-links li:last-child a {
   left: 0px;
   content: "";
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #cc5050;
+    border-right: 10px solid #cc5050;
 }
 
 .section-description {

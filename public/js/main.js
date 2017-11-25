@@ -1,9 +1,3 @@
-/*
-* Template Name: Sunshine - Responsive vCard Template
-* Author: LMPixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 2.1
-*/
 
 (function($) {
 "use strict";
@@ -42,13 +36,36 @@
 
         $('#contact-form').validator();
 
+        /*$("#contact-form").validate({
+            rules: {
+                name: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                user_message: {
+                    required: true,
+                    minlength: 5
+                }
+            },
+            messages: {
+                name: "Enter your firstname",
+                email: {
+                    required: "Enter an email",
+                    email: "Enter a valid email"
+                },
+                user_message: {
+                    required: "Enter a username",
+                    minlength: jQuery.format("Enter at least {0} characters")
+                }
+            }
+        });*/
+
         $('#contact-form').on('submit', function (e) {
             if (!e.isDefaultPrevented()) {
-                var url = "contact_form/contact_form.php";
-
                 $.ajax({
                     type: "POST",
-                    url: url,
+                    url: "/contact",
                     data: $(this).serialize(),
                     success: function (data)
                     {
@@ -60,11 +77,14 @@
                             $('#contact-form').find('.messages').html(alertBox);
                             if (messageAlert == "alert-success") {
                                 $('#contact-form')[0].reset();
+                                console.log('passed');
                             }
                         }
                     }
                 });
                 return false;
+            } else {
+                console.log($(this).serialize());
             }
         });
     });

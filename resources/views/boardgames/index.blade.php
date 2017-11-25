@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Мир Настольных Игр</title>
+    <title>Путеводитель в Мир Настольных Игр</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Мир Настольных Игр" />
     <meta name="keywords" content="настольные игры, молдова, board games, moldova, jocuri de masa" />
@@ -21,7 +21,7 @@
     <script src="{{ url('js/jquery-2.1.3.min.js') }}"></script>
     <script src="{{ url('js/modernizr.custom.js') }}"></script>
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
 </head>
 
 <body>
@@ -512,7 +512,7 @@
 
                         <div class="col-sm-6 col-md-4 subpage-block">
                             <div class="block-title">
-                                <h3></h3>
+                                <h3>Статистика и Планы</h3>
                             </div>
                             <img src="{{ url('images/service/marco1.jpg') }}" width="100%" alt="image">
                             <div class="timeline">
@@ -703,7 +703,7 @@
                                     <ul class="category">
                                         <li><a href="#">Обзор</a></li>
                                     </ul>
-                                    <a href="{{ route("post.view", 1) }}"><h4 class="blog-item-title">Знакомимся с Канагава</h4></a>
+                                    <a href="{{ route("post.view", 1) }}"><h4 class="blog-item-title">Знакомство с Канагава</h4></a>
                                 </div>
                             </div>
                         </div>
@@ -715,22 +715,22 @@
                 <!-- Contact Subpage -->
                 <section class="pt-page pt-page-6" data-id="contact">
                     <div class="section-title-block">
-                        <h2 class="section-title">Contact</h2>
-                        <h5 class="section-description">Get in Touch</h5>
+                        <h2 class="section-title">Контакты</h2>
+                        <h5 class="section-description">На связи всегда</h5>
                     </div>
 
                     <div class="row">
                         <div class="col-sm-6 col-md-6 subpage-block">
                             <div class="block-title">
-                                <h3>Get in Touch</h3>
+                                <h3>Свяжитесь с нами</h3>
                             </div>
-                            <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
+                            <p>Если есть вопросы, уточнения или любая другая информация, отправьте заявку. В течении часа вы получите полный ответ.</p>
                             <div class="contact-info-block">
                                 <div class="ci-icon">
                                     <i class="pe-7s-icon pe-7s-map-marker"></i>
                                 </div>
                                 <div class="ci-text">
-                                    <h5>Los Angeles, USA</h5>
+                                    <h5>Молдова, Кишинев</h5>
                                 </div>
                             </div>
                             <div class="contact-info-block">
@@ -738,7 +738,7 @@
                                     <i class="pe-7s-icon pe-7s-mail"></i>
                                 </div>
                                 <div class="ci-text">
-                                    <h5>alexsmith@example.com</h5>
+                                    <h5>mirigr@gmail.com</h5>
                                 </div>
                             </div>
                             <div class="contact-info-block">
@@ -746,7 +746,7 @@
                                     <i class="pe-7s-icon pe-7s-call"></i>
                                 </div>
                                 <div class="ci-text">
-                                    <h5>+123 654 78900</h5>
+                                    <h5>+373 (793) 1-60-60</h5>
                                 </div>
                             </div>
                             <div class="contact-info-block">
@@ -754,36 +754,37 @@
                                     <i class="pe-7s-icon pe-7s-check"></i>
                                 </div>
                                 <div class="ci-text">
-                                    <h5>Freelance Available</h5>
+                                    <h5>24 Часа, Без Выходных</h5>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-sm-6 col-md-6 subpage-block">
                             <div class="block-title">
-                                <h3>Contact Form</h3>
+                                <h3>Ваше Сообщение</h3>
                             </div>
-                            <form id="contact-form" method="post" action="contact_form/contact_form.php">
 
+                            <form id="contact-form" method="post" action="/contact">
+                                {{ csrf_field() }}
                                 <div class="messages"></div>
 
                                 <div class="controls">
                                     <div class="form-group">
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Полное Имя" required="required" data-error="Имя Обязательно">
                                         <div class="form-control-border"></div>
                                         <i class="form-control-icon fa fa-user"></i>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Имейл" required="required" data-error="Введите правильный имейл">
                                         <div class="form-control-border"></div>
                                         <i class="form-control-icon fa fa-envelope"></i>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group">
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                        <textarea id="form_message" name="user_message" minlength="5" class="form-control" placeholder="Ваше Сообщение" rows="4" required="required" data-error="Пожалуйста, оставьте сообщение.(Мин. 5 Символов)"></textarea>
                                         <div class="form-control-border"></div>
                                         <i class="form-control-icon fa fa-comment"></i>
                                         <div class="help-block with-errors"></div>
@@ -791,7 +792,7 @@
 
                                     <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
 
-                                    <input type="submit" class="button btn-send" value="Send message">
+                                    <input type="submit" class="button btn-send" value="Отправить сообщение">
                                 </div>
                             </form>
                         </div>
@@ -810,6 +811,7 @@
 <script src="{{ url('js/page-transition.js') }}"></script>
 <script src="{{ url('js/imagesloaded.pkgd.min.js') }}"></script>
 <script src="{{ url('js/validator.js') }}"></script>
+{{--<script src="{{ url('js/jquery.validate') }}"></script>--}}
 <script src="{{ url('js/jquery.shuffle.min.js') }}"></script>
 <script src="{{ url('js/masonry.pkgd.min.js') }}"></script>
 <script src="{{ url('js/owl.carousel.min.js') }}"></script>
