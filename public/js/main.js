@@ -49,13 +49,13 @@
                 }
             },
             messages: {
-                name: "Enter your firstname",
+                name: "Enter your name",
                 email: {
                     required: "Enter an email",
                     email: "Enter a valid email"
                 },
                 user_message: {
-                    required: "Enter a username",
+                    required: "Enter a name",
                     minlength: jQuery.format("Enter at least {0} characters")
                 }
             }
@@ -77,7 +77,6 @@
                             $('#contact-form').find('.messages').html(alertBox);
                             if (messageAlert == "alert-success") {
                                 $('#contact-form')[0].reset();
-                                console.log('passed');
                             }
                         }
                     }
